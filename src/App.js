@@ -12,7 +12,7 @@ import AboutPage from "./pages/about/index.js";
 import ShopCollectionPage from './pages/shopCollection/index.js';
 import ContactPage from "./pages/contact/index.js";
 import FAQPage from "./pages/FAQ/index.js";
-import ProductRoutePage from './pages/product/index.js'
+import ProductRouterPage from './pages/product/index.js'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path='/shop-collection' element={<ShopCollectionPage />} />
           <Route path='/faq' element={<FAQPage />} />
           <Route path='/contact' element={<ContactPage />} />
-          <Route path='/product/*' element={<ProductRoutePage />} />
+          <Route path='/product/*' element={<ProductRouterPage />} />
         </Routes>
       </Router>
     </div>
