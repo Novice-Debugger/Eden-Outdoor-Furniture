@@ -26,7 +26,7 @@ const NavigationBar = () => {
         {
             head: 'Shop Collection',
             icon: <img src={ShopCollectionIcon} className='h-5' />,
-            href: '/shop-collection',
+            href: '/product/sofa',
         },
         {
             head: 'FAQ',

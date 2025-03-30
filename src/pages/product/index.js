@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     Routes,
-    Route
+    Route,
+    useLocation
 } from "react-router";
 
 import productList from './products';
@@ -10,6 +11,12 @@ import ProductMenuPage from './pages/productMenu/index.js';
 import ProductDescriptionPage from './pages/productDescription/index.js';
 
 const ProductRouterPage = () => {
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return (
         <div>
